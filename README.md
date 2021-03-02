@@ -29,4 +29,5 @@
 
 Пример вывода сражения в консоль. Это не шаблон, реализация может отличаться:
 
-![](https://edu.tinkoff.ru/media/edu-files-ext-100/b44e576d-5ca8-492c-b4f8-5d9359e206fc.png)
+![картинка](https://user-images.githubusercontent.com/73642086/109676869-2a480b80-7b8a-11eb-946d-e9aec3cab31d.png)
+
