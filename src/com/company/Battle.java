@@ -1,27 +1,20 @@
 package com.company;
 
-/**
- * В классе Battle создать метод start(), который будет запускать битву,
- * создаст экземпляры своих боевых юнитов и инсценирует битву с выводом в консоль.
- * Осуществление действий юнитами выражается через вывод в консоль,
- * т.е. в телах соответствующих методов (атака, защита, смерть, движение)
- * необходимо логировать эти действия.
- * В консоль выводится минимум одно событие битвы.
- */
-
 public class Battle {
 
+
     public void start() {
-        ArcherWarrior archer = new ArcherWarrior("Хуючник", "Лучник");
-        WitcherWarrior witcher = new WitcherWarrior("Хуюдун", "Колдун");
-        archer.bowShot();
-        witcher.run();
-        witcher.magicWaves();
-        archer.raiseTheShield();
-        archer.bowShot();
-        witcher.invisibility();
-        witcher.magicWaves();
-        archer.death();
+        Pikachu pikachu = new Pikachu();
+        Charmander charmander = new Charmander();
+
+        while (pikachu.health > 0 || charmander.health > 0) {
+            pikachu.electricShock(charmander);
+            charmander.run();
+            charmander.flameThrower(pikachu);
+            pikachu.shield(charmander);
+            pikachu.electricShock(charmander);
+            charmander.sunPower(pikachu);
+            charmander.flameThrower(pikachu);
+        }
     }
 }
-
